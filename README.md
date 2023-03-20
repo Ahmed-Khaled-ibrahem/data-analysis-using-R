@@ -1,4 +1,3 @@
 # data-analysis-using-R
 
-[content](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf)
-[embed]https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf[/embed]
+https://docs.google.com/viewer?url=https://raw.githubusercontent.com/degoes-consulting/lambdaconf-2015/master/speakers/jdegoes/intro-purescript/presentation.pdf
