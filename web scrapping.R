@@ -8,4 +8,13 @@ get_wiki_covid19_page <- function() {
   return(response)
 }
 
-get_wiki_covid19_page()
+html_file <- get_wiki_covid19_page()
+html <- read_html("https://en.wikipedia.org/w/index.php?title=Template:COVID-19_testing_by_country")
+cont <- html_nodes(html,"body")
+table <- html_table(cont)
+df <- as.data.frame(html_table(cont))
+summary(df)
+
+
+
+
