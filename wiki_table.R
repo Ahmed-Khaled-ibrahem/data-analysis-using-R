@@ -7,7 +7,9 @@ document <- read_html(url)
 htmlTables <- html_table(document)[2]
 df <- as.data.frame(htmlTables)
 
-print(head(df))
-# summary(htmlTables)
+colnames(df) <- c("Country","Date", "Tested","Units","Confirmed.cases","Confirmed.tested","Tested.population","Confirmed.population", "REF")
+colnames(df)
+
+
 # datasets::airquality
 
