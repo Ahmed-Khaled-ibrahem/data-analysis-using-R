@@ -5,8 +5,9 @@ url <- "https://en.wikipedia.org/w/index.php?title=Template:COVID-19_testing_by_
 document <- read_html(url)
 
 htmlTables <- html_table(document)[2]
+df <- as.data.frame(htmlTables)
 
-print(summary(htmlTables))
+print(head(df))
 # summary(htmlTables)
 # datasets::airquality
 
