@@ -8,8 +8,8 @@ htmlTables <- html_table(document)[2]
 df <- as.data.frame(htmlTables)
 
 colnames(df) <- c("Country","Date", "Tested","Units","Confirmed.cases","Confirmed.tested","Tested.population","Confirmed.population", "REF")
-colnames(df)
+df <- df[-173,]
 
-
-# datasets::airquality
-
+df[,"Tested"] <- df[,"Tested"] %>% gsub(pattern = ",",replacement = "") %>% as.numeric()
+# summary(df)
+sum(df[,"Tested"] )
