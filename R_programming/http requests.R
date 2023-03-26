@@ -7,5 +7,3 @@ get_wiki_covid19_page <- function() {
   response <- GET(paste0(wiki_base_url ,url_parameters))
   return(response)
 }
-
-get_wiki_covid19_page()
