@@ -14,6 +14,7 @@ cont <- html_nodes(html,"body")
 table <- html_table(cont)
 df <- as.data.frame(html_table(cont))
 summary(df)
+head(df)
 
 
 
